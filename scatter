@@ -1,0 +1,15 @@
+import pandas as pd
+df =pd.read_csv('C:/Users/User/2015-2018  LG1_S302 filter.csv',index_col= 'Dates',parse_dates= True) 
+
+%matplotlib inline
+import matplotlib.pyplot as plt
+
+df.columns
+
+x= df['S21_302INV_Common_mode'].values
+y= df['S21_302INV_ACALLKW'].values
+
+plt.scatter(x,y,alpha=1.0)
+plt.xlim(0,20)
+plt.xlabel('S21_302INV_Common_mode')
+plt.ylabel('S21_302INV_ACALLK')
