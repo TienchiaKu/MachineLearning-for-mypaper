@@ -1,0 +1,2 @@
+import pandas as pd
+df =pd.read_csv('C:/Users/User/2015-2018  LG1_S302 filter _com.csv',index_col= 'Dates',parse_dates= True) 
