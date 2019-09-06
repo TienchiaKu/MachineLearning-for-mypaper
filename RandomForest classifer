@@ -1,6 +1,6 @@
 #匯入pandas及csv檔
 import pandas as pd
-df =pd.read_csv('C:/Users/User/2015-2018  LG1_S302 filter.csv',index_col= 'Dates',parse_dates= True) 
+df =pd.read_csv('C:路徑.csv',index_col= 'Dates',parse_dates= True) 
 
 #匯入隨機森林分類器及numpy
 from sklearn.ensemble import RandomForestClassifier
