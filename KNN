@@ -1,6 +1,6 @@
 #匯入pandas及csv檔
 import pandas as pd
-df =pd.read_csv('C:/Users/User/2015-2018  LG1_S302 filter.csv',index_col= 'Dates',parse_dates= True) 
+df =pd.read_csv('C:路徑.csv',index_col= 'Dates',parse_dates= True) 
 
 #查看欄位、頭5筆資料、最後5筆資料
 df.columns
@@ -14,9 +14,10 @@ import numpy as np
 
 #定義x,y的資料
 x= df.iloc[:,[1,2]].values
-# x_name= ['S21_302INV_ACALLKW','S21_302INV_ACAMP']
+# x_name= ['欄位2','欄位3']
 y= df.iloc[:,0].values
-# y_name= ['S21_302INV_ALARM']
+# y_name= ['欄位1']
+
 
 #切割資料，80%訓練，20%測試
 from sklearn.model_selection import train_test_split
