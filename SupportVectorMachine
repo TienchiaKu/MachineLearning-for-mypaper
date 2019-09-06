@@ -1,6 +1,6 @@
 #匯入pandas及csv檔
 import pandas as pd
-df =pd.read_csv('C:.csv',index_col= 'Dates',parse_dates= True) 
+df =pd.read_csv('C:路徑.csv',index_col= 'Dates',parse_dates= True) 
 #C:/路徑/.csv,index_col=索引欄位,parse_date=日期
 
 #查看欄位、頭5筆資料、最後5筆資料
